@@ -16,7 +16,6 @@ def rock_paper_scissors():
 
     if player == computer:
         print("It's a Tie!")
-
     elif (player == "rock" and computer == "scissors") or \
          (player == "paper" and computer == "rock") or \
          (player == "scissors" and computer == "paper"):
@@ -25,11 +24,10 @@ def rock_paper_scissors():
     else:
         print("Computer Wins!")
 
-
 #  STORY GENERATOR
 
 def story_generator():
-    print("\n------ Story Generator ------")
+    print("\nStory Generator")
 
     when = [
         "Yesterday",
@@ -65,9 +63,7 @@ def story_generator():
         "with the help of friends.",
         "by accident."
     ]
-
     print("\nGenerated Story:\n")
-
     print(
         random.choice(when),
         random.choice(who),
@@ -80,7 +76,6 @@ def story_generator():
 #OTP EMAIL
 
 def otp_generator():
-
     print("\n OTP Generator")
 
     sender = input("Enter Sender Gmail: ")
@@ -152,9 +147,9 @@ def bmi_calculator():
 
 while True:
 
-    print("\n==============================")
+    print("\n")
     print("      GAME GENERATOR MENU")
-    print("==============================")
+    print("")
     print("1. Rock Paper Scissors")
     print("2. Story Generator")
     print("3. OTP Generate to Email")

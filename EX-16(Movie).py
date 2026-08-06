@@ -1,6 +1,5 @@
 import random
 from datetime import datetime
-
 def welcome():
     print("Welcome to MovieMate AI!")
     print()
@@ -33,7 +32,6 @@ def choose_genre():
 
 
 def show_movies(genre):
-
     if genre == "Action":
         movies = ["Leo", "Vikram", "Jailer", "SpiderMan"]
 
@@ -52,7 +50,6 @@ def show_movies(genre):
         print(i + 1, ".", movies[i], sep="")
 
     return movies
-
 
 def book_ticket(name, movie):
 
@@ -85,9 +82,8 @@ if genre != None:
     movie = input("\nEnter movie: ")
 
     if movie in movies:
-
+        
         book_ticket(name, movie)
 
     else:
-
         print("Movie not available.")
